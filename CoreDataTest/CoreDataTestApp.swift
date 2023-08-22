@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct CoreDataTestApp: App {
-    let persistenceController = PersistenceController.shared
+    let coreData = CoreDataStack.shared
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            TaskView(viewModel: TaskViewModel())
+                .environment(\.managedObjectContext, CoreDataStack.shared.container.viewContext)
         }
     }
 }
