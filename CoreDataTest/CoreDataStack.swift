@@ -1,5 +1,4 @@
 //
-//  Persistence.swift
 //  CoreDataTest
 //
 //  Created by userext on 21/08/23.
@@ -12,7 +11,7 @@ struct CoreDataStack {
     static let shared = CoreDataStack()
     
     var context: NSManagedObjectContext { self.container.viewContext }
-
+    
     let container: NSPersistentContainer
     
     init(inMemory: Bool = false) {
