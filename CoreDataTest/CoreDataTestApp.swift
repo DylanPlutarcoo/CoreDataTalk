@@ -14,7 +14,7 @@ struct CoreDataTestApp: App {
     var body: some Scene {
         WindowGroup {
             TaskView(viewModel: TaskViewModel())
-                .environment(\.managedObjectContext, CoreDataStack.shared.container.viewContext)
+//                .environment(\.managedObjectContext, CoreDataStack.shared.container.viewContext)
         }
     }
 }

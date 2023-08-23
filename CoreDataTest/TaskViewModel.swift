@@ -18,16 +18,6 @@ class TaskViewModel: ObservableObject {
         fetchTasks()
     }
     
-    func fetchTasks() {
-        let request = NSFetchRequest<TaskEntity>(entityName: "TaskEntity")
-        do {
-            savedTasks = try stack.context.fetch(request)
-        } catch let error {
-            print("error fetching. \(error)")
-            
-        }
-    }
-    
     func addTask(title: String) {
         let newTask = TaskEntity(context: stack.context)
         newTask.title = title
@@ -35,6 +25,22 @@ class TaskViewModel: ObservableObject {
         stack.saveContext()
         fetchTasks()
     }
+    
+    func fetchTasks() {
+        let request = NSFetchRequest<TaskEntity>(entityName: "TaskEntity")
+        do {
+            savedTasks = try stack.context.fetch(request)
+        } catch let error {
+            print("error fetching. \(error)")
+        }
+    }
+    
+    func editTask(task: TaskEntity, newTitle: String) {
+        task.title = newTitle
+        CoreDataStack.shared.saveContext()
+        fetchTasks()
+    }
+
     
     func deleteTasks(at offsets: IndexSet) {
         var indexremove: Int?
@@ -49,8 +55,7 @@ class TaskViewModel: ObservableObject {
             }
         }
     }
-    
-    func toggleTaskCompletion(task: TaskEntity) {
+    func toggleTask(task: TaskEntity) {
         task.isCompleted.toggle()
         CoreDataStack.shared.saveContext()
         fetchTasks()
