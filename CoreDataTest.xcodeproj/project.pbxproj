@@ -9,11 +9,10 @@
 /* Begin PBXBuildFile section */
 		6413791A2A94343C0031FD20 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 641379182A94343C0031FD20 /* Model.xcdatamodeld */; };
 		647E7CFB2A940FB3004FD911 /* CoreDataTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647E7CFA2A940FB3004FD911 /* CoreDataTestApp.swift */; };
-		647E7CFD2A940FB3004FD911 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647E7CFC2A940FB3004FD911 /* Persistence.swift */; };
+		647E7CFD2A940FB3004FD911 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647E7CFC2A940FB3004FD911 /* CoreDataStack.swift */; };
 		647E7D042A940FB4004FD911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 647E7D032A940FB4004FD911 /* Assets.xcassets */; };
 		647E7D082A940FB4004FD911 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 647E7D072A940FB4004FD911 /* Preview Assets.xcassets */; };
 		647E7D0F2A9413AC004FD911 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647E7D0E2A9413AC004FD911 /* TaskViewModel.swift */; };
-		647E7D112A941595004FD911 /* ItemTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647E7D102A941595004FD911 /* ItemTask.swift */; };
 		647E7D132A942FBD004FD911 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647E7D122A942FBD004FD911 /* TaskView.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,11 +20,10 @@
 		641379192A94343C0031FD20 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		647E7CF72A940FB3004FD911 /* CoreDataTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		647E7CFA2A940FB3004FD911 /* CoreDataTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTestApp.swift; sourceTree = "<group>"; };
-		647E7CFC2A940FB3004FD911 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		647E7CFC2A940FB3004FD911 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		647E7D032A940FB4004FD911 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		647E7D072A940FB4004FD911 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		647E7D0E2A9413AC004FD911 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
-		647E7D102A941595004FD911 /* ItemTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTask.swift; sourceTree = "<group>"; };
 		647E7D122A942FBD004FD911 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,8 +60,7 @@
 				647E7CFA2A940FB3004FD911 /* CoreDataTestApp.swift */,
 				647E7D122A942FBD004FD911 /* TaskView.swift */,
 				647E7D0E2A9413AC004FD911 /* TaskViewModel.swift */,
-				647E7CFC2A940FB3004FD911 /* Persistence.swift */,
-				647E7D102A941595004FD911 /* ItemTask.swift */,
+				647E7CFC2A940FB3004FD911 /* CoreDataStack.swift */,
 				647E7D032A940FB4004FD911 /* Assets.xcassets */,
 				641379182A94343C0031FD20 /* Model.xcdatamodeld */,
 				647E7D062A940FB4004FD911 /* Preview Content */,
@@ -150,11 +147,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				647E7CFB2A940FB3004FD911 /* CoreDataTestApp.swift in Sources */,
-				647E7D112A941595004FD911 /* ItemTask.swift in Sources */,
 				647E7D0F2A9413AC004FD911 /* TaskViewModel.swift in Sources */,
 				6413791A2A94343C0031FD20 /* Model.xcdatamodeld in Sources */,
 				647E7D132A942FBD004FD911 /* TaskView.swift in Sources */,
-				647E7CFD2A940FB3004FD911 /* Persistence.swift in Sources */,
+				647E7CFD2A940FB3004FD911 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

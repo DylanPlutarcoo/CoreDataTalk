@@ -13,6 +13,7 @@ struct TaskView: View {
                     newTask = ""
                 })
                 .padding(.horizontal, 20)
+                .padding(.top, 20)
                 List {
                     ForEach(viewModel.savedTasks) { task in
                         HStack {
