@@ -10,17 +10,18 @@ import CoreData
 
 class TaskViewModel: ObservableObject {
     @Published var savedTasks: [TaskEntity] = []
-    private let context = CoreDataStack.shared.container.viewContext
+    private let stack: CoreDataStack
     
     
-    init() {
+    init(stack: CoreDataStack = .shared) {
+        self.stack = stack
         fetchTasks()
     }
     
     func fetchTasks() {
         let request = NSFetchRequest<TaskEntity>(entityName: "TaskEntity")
         do {
-            savedTasks = try CoreDataStack.shared.container.viewContext.fetch(request)
+            savedTasks = try stack.context.fetch(request)
         } catch let error {
             print("error fetching. \(error)")
             
@@ -28,21 +29,26 @@ class TaskViewModel: ObservableObject {
     }
     
     func addTask(title: String) {
-        let newTask = TaskEntity(context: CoreDataStack.shared.container.viewContext)
+        let newTask = TaskEntity(context: stack.context)
         newTask.title = title
         newTask.isCompleted = false
-        CoreDataStack.shared.saveContext()
+        stack.saveContext()
         fetchTasks()
     }
     
     func deleteTasks(at offsets: IndexSet) {
-            offsets.forEach { index in
-                let task = savedTasks[index]
-                context.delete(task)
-            }
-            CoreDataStack.shared.saveContext()
-            fetchTasks()
+        var indexremove: Int?
+        offsets.forEach { index in
+            let task = savedTasks[index]
+            stack.context.delete(task)
+            indexremove = index
         }
+        if stack.saveContext() {
+            if let index = indexremove{
+                savedTasks.remove(at: index)
+            }
+        }
+    }
     
     func toggleTaskCompletion(task: TaskEntity) {
         task.isCompleted.toggle()
