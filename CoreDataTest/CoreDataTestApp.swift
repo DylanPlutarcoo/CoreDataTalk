@@ -9,12 +9,11 @@ import SwiftUI
 
 @main
 struct CoreDataTestApp: App {
-    let coreData = CoreDataStack.shared
 
     var body: some Scene {
         WindowGroup {
-            TaskView(viewModel: TaskViewModel())
-//                .environment(\.managedObjectContext, CoreDataStack.shared.container.viewContext)
+            TaskView(viewModel: TaskViewModel(stack: CoreDataStack()))
+                .environment(\.managedObjectContext, CoreDataStack.shared.container.viewContext)
         }
     }
 }

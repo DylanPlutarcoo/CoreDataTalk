@@ -10,6 +10,7 @@ import CoreData
 
 class TaskViewModel: ObservableObject {
     @Published var savedTasks: [TaskEntity] = []
+    var editingTask: TaskEntity?
     private let stack: CoreDataStack
     
     
