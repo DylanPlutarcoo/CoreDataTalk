@@ -12,8 +12,7 @@ class TaskViewModel: ObservableObject {
     @Published var savedTasks: [TaskEntity] = []
     var editingTask: TaskEntity?
     private let stack: CoreDataStack
-    
-    
+
     init(stack: CoreDataStack = .shared) {
         self.stack = stack
         fetchTasks()
