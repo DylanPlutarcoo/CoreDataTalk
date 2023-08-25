@@ -17,5 +17,83 @@
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2DBDECD4-1866-4217-93ED-EA78C687606B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CoreDataTest/TaskViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "TaskViewModel"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "2DBDECD4-1866-4217-93ED-EA78C687606B - 4d5db665c1dd25b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 0 of CoreDataTest.TaskViewModel.init(stack: CoreDataTest.CoreDataStack) -&gt; CoreDataTest.TaskViewModel"
+                  moduleName = "CoreDataTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/userext/Desktop/Pasta%20Sem%20Ti%CC%81tulo/CoreDataTalk/CoreDataTest/TaskViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "2DBDECD4-1866-4217-93ED-EA78C687606B - 5a4c8d2166252269"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreDataTest.TaskViewModel.__allocating_init(stack: CoreDataTest.CoreDataStack) -&gt; CoreDataTest.TaskViewModel"
+                  moduleName = "CoreDataTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/userext/Desktop/Pasta%20Sem%20Ti%CC%81tulo/CoreDataTalk/CoreDataTest/TaskViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "2DBDECD4-1866-4217-93ED-EA78C687606B - 610c142689e2af2c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CoreDataTest.TaskViewModel.init(stack: CoreDataTest.CoreDataStack) -&gt; CoreDataTest.TaskViewModel"
+                  moduleName = "CoreDataTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/userext/Desktop/Pasta%20Sem%20Ti%CC%81tulo/CoreDataTalk/CoreDataTest/TaskViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "2DBDECD4-1866-4217-93ED-EA78C687606B - 4d5db665c1dd25da"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "default argument 0 of CoreDataTest.TaskViewModel.init(stack: CoreDataTest.CoreDataStack) -&gt; CoreDataTest.TaskViewModel"
+                  moduleName = "CoreDataTest"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/userext/Desktop/Pasta%20Sem%20Ti%CC%81tulo/CoreDataTalk/CoreDataTest/TaskViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
